@@ -1,9 +1,8 @@
 * {
   margin:  0px;
   padding:  0px;
-  font-family: Big Shoulders Display;
-  font-size: 30px;
-
+  font-family: 'Lexend', sans-serif;
+  font-size: 28px;
 }
 
 nav {
@@ -135,7 +134,7 @@ nav ul li:hover a {
 
 .subText {
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lexend', sans-serif;
 }
 
 #about-container {
@@ -157,7 +156,8 @@ nav ul li:hover a {
 }
 
 .textClass {
-  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  font-family: 'Lexend', sans-serif;
 }
 
 .headerStyle {
@@ -203,7 +203,7 @@ button {
 .dropdown {
   position: relative;
   display: inline-block;
-  color: white;
+  color: dimgrey;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -260,4 +260,19 @@ button {
    height: 700px;
    width: 48%;
    float: right;
-   }  
+   }
+
+input[type=name], input[type=email] {
+  width: 90%;
+  border-radius: 20px;
+  margin: 12px 2px;
+  padding: 8px 12px;
+}
+
+input[type=text] {
+  width: 90%;
+  height: 300px;
+  border-radius: 20px;
+  margin: 12px 2px;
+  resize: none;
+}
