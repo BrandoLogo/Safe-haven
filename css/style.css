@@ -2,7 +2,7 @@
   margin:  0px;
   padding:  0px;
   font-family: 'Lexend', sans-serif;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 nav {
@@ -37,34 +37,36 @@ nav ul li:hover a {
   color: black;
 }
 
-.section2 {
+.main-container {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 75px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 700px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-
-  text-align: center;
+  width: 95%;
+  border-radius: 20px;
+  background-image: url();
+  position: relative;
 }
 
 .haven-text {
-  padding-top: 330px;
   text-align: center;
+  border-radius: 20px;
+  border: solid 4px;
+  margin-top: 30px;
+  padding: 10px;
+  height: 40%;
+  width: 68%;
+  position: relative;
+  background-color: lightgoldenrodyellow;
+  top: 10px;
+  left: 30px;
 }
 
 .haven-text h1 {
   font-size: 120px;
-}
-
-.logo-column img {
-  padding-top: 100px;
 }
 
 .section3 {
@@ -101,8 +103,11 @@ nav ul li:hover a {
 
 #circleImage {
   border-radius: 50%;
-  width:  512px;
-  height:  512px;
+  border: solid 5px;
+  width: 430px;
+  height: 440px;
+  position: absolute;
+  right: 40px;
 }
 
 .founderimage {
@@ -123,6 +128,7 @@ nav ul li:hover a {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 
 .socialmedia {
   width:  80px;
@@ -243,6 +249,7 @@ button {
    width: 1400px;
    margin: 0px auto;
    padding: 5px;
+   margin-bottom: 30px;
   }
 
 .leftDiv {
@@ -254,6 +261,21 @@ button {
    float: left;
    }
 
+.leftDiv p, a {
+  font-size: 22px;
+  line-height: 35.5px;
+}
+
+
+.leftDiv iframe {
+  border-radius: 20px;
+  border: solid 2px;
+}
+
+.leftDiv b {
+  font-size: 20px;
+}
+
 .rightDiv {
    background-color: #efefef;
    border-radius: 20px;
@@ -261,7 +283,7 @@ button {
    height: 700px;
    width: 48%;
    float: right;
-   }
+  }
 
 input[type=name], input[type=email], textarea {
   width: 90%;
@@ -273,4 +295,61 @@ input[type=name], input[type=email], textarea {
 
 textarea {
   font-size: 23px;
+}
+
+.rightDiv input[type=name] {
+  margin-top: 40px;
+}
+
+.rightDiv input[type=submit] {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.container-1 {
+  border: 2px solid;
+  display: grid;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 450px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-image: url("https://img.freepik.com/free-vector/hand-drawn-summer-tropical-pattern_23-2148929688.jpg");
+}
+
+#c1-picture {
+  place-self: end;
+  border-radius: 10px;
+  width: 92%;
+  height: 101%;
+  border: 2px solid;
+  grid-row: 2 / 10;
+  grid-column: 1 / 4;
+}
+
+.c1-title {
+  padding: 8px 0px;
+  place-self: center;
+  border-radius: 10px;
+  grid-row: 2 / 3;
+  grid-column: 4 / 11;
+  width: 85%;
+  border: 2px solid;
+  background-color: white;
+}
+
+#c1-text {
+  padding: 20px 20px 0px 20px;
+  grid-column: 4 / 11;
+  border-radius: 10px;
+  grid-row: 3 / 11;
+  border: 2px solid;
+  place-self: center;
+  width: 79%;
+  height: 70%;
+  background-color: white;
 }
